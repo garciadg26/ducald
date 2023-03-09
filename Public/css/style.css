@@ -1,0 +1,551 @@
+:root{
+    --color-white:#ffffff;
+    --color-black:#000000;
+    --color-black-light:#353535;
+    --color-azul-ducald:#28256B;
+    --color-naranja-ducald:#CD5B20;
+    --color-amarillo-ducald:#E6AD19;
+    --color-gris-ducald:#C5C5C5;
+    --font-open-sans: 'Open Sans', sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: var(--font-open-sans);
+}
+
+/* MENÚ PRINCIPAL */
+.menu_principal{
+    display: block;
+    position: relative;
+    box-shadow: 0px 6px 18px rgb(0 0 0 / 20%);
+    z-index: 1;
+}
+
+.cont_encabezado{
+    max-width: 1200px;
+    margin-left: calc(50% - 600px);
+}
+.cont_encabezado .tit_principal{
+    margin-bottom: 48px;
+}
+.tit_principal, .tit_principal_bn{
+    font-family: var(--font-open-sans);
+    color: var(--color-azul-ducald);
+    line-height: 3.6rem;
+    font-weight: 800;
+    font-size: 2.7vw;
+}
+.tit_principal{
+    color: var(--color-azul-ducald);
+}
+.tit_principal_bn{
+    color: var(--color-white);
+}
+.subtit_principal{
+    font-family: var(--font-open-sans);
+    color: var(--color-black);
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: bold;
+}
+.subtit_secundario{
+    font-size: 2rem;
+    color: var(--color-black);
+    font-weight: bold;
+    line-height: 2.4rem;
+}
+.txt_secundario{
+    color: var(--color-black);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.txt_tercero{
+    font-family: var(--font-open-sans);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.txt_general{
+    font-family: var(--font-open-sans);
+    color: var(--color-black);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.txt_general_bn{
+    font-family: var(--font-open-sans);
+    color: var(--color-white);
+    font-size: 1.3rem;
+}
+.txt_tercero_xb{
+    font-family: var(--font-open-sans);
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+.w-400{
+    width: 750px;
+    margin-left: calc(50% - 375px);
+}
+
+
+/* BOTONES */
+.btn_gen{
+    font-family: var(--font-open-sans);
+    color: var(--color-naranja-ducald);
+    font-weight: 600;
+}
+.btn_gen:hover{    
+    color: var(--color-naranja-ducald);
+    text-decoration: underline;
+}
+.tit_link, .tit_link_col{
+    position: relative;
+    font-size: 3vw;
+    font-weight: 800;
+    pointer-events: auto;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    border: none;
+    padding: .6rem 0rem;
+}
+.tit_link{
+    color: var(--color-white);
+}
+.tit_link:hover{
+    color: var(--color-white);
+    text-decoration: none;
+}
+.tit_link_col{
+    color: var(--color-azul-ducald);
+}
+.link_slide{
+    text-shadow: 1px 5px 7px rgb(0 0 0 / 30%), 0px -5px 35px rgb(255 255 255 / 30%);
+}
+.button::before,
+.button::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.button--telesto {
+	overflow: hidden;
+	font-weight: 800;
+	background-color: transparent;
+}
+
+.button--telesto span {
+	display: block;
+	position: relative;
+	z-index: 1;
+}
+
+.button--telesto > span {
+	overflow: hidden;
+}
+
+.button--telesto:hover > span > span {
+	animation: MoveRightInitial 0.1s forwards, MoveRightEnd 0.3s forwards 0.2s;
+}
+
+.button--telesto::before,
+.button--telesto::after {
+	content: '';
+	background: var(--color-white);
+}
+
+.button--telesto::before {
+	width: 132%;
+    height: 10px;
+	transform: translate3d(-100%,0,0);
+    left: -1px;
+}
+
+.button--telesto:hover::before {
+    transform: translate3d(0,0,0);
+	transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.button--telesto::after {
+    width: 105%;
+    height: 10px;
+	transform: translate3d(100%,0,0);
+	transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.button--telesto:hover::after {
+	transform: translate3d(0,0,0);
+	transition: transform 0.01s 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+
+/* NAVEGACIÓN */
+#sec_ducald_01{
+    background-color: red;
+    width: 100%;
+    height: 90vh!important;
+}
+
+.navbar{
+    width: 80%;
+    margin-left: 10%;
+    justify-content: space-between;
+}
+.navbar .navbar-brand{
+    width: 120px;
+    height: auto;
+}
+
+    /* SECCIONES */
+.sec_general{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    width: 100%;
+    height: 100vh;
+}
+#sec_ducald_01, #sec_ducald_02, #sec_ducald_03, #sec_ducald_04, #sec_ducald_05, #sec_ducald_06{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+#sec_ducald_01{
+    background-image: url('../images/Pinturas-ducald-tu-mejor-opcion.jpg');
+}
+#sec_ducald_02{
+    background-image: url('../images/Pinturas-ducald-productos.jpg');
+}
+#sec_ducald_03{
+    background-image: url('../images/Pinturas-ducald-nosotros.jpg');
+}
+#sec_ducald_04{
+    background-image: url('../images/Pinturas-ducald-blog.jpg');
+}
+#sec_ducald_05{
+    background-image: url('../images/Pinturas-ducald-facturacion.jpg');
+}
+#sec_ducald_06{
+    background-image: url('../images/Pinturas-ducald-contacto.jpg');
+}
+
+
+    /* FOOTER */
+#footer{
+    position: relative;
+    font-family: var(--font-open-sans);
+    background-color: var(--color-amarillo-ducald);
+    font-weight: 600;
+    padding: 100px 0px 20px 0px;
+}
+#footer::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 60px;
+    top: -60px;
+    background-image: url('../images/svg/pleca_footer_top.svg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+.cont_logo_foot{
+    margin-bottom: 40px;
+}
+.tit_footer{
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: 1rem;
+}
+.tit_foot_principal{
+    font-family: var(--font-open-sans);
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--color-white);
+}
+.list_foot_product{
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+.list_foot_product a{
+    color: var(--color-white);
+    font-size: 1rem;
+    font-weight: 500;
+}
+.list_social_foot{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 60px 0px;
+}
+.list_social_foot a{
+    height: 28px;
+    padding: 0px 6px;
+    margin: 0 2px;
+}
+.list_social_foot li img{
+    height: 28px;
+}
+.txt_legales{
+    color: var(--color-white);
+    font-family: var(--font-open-sans);
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+/* __PÁGINA PRINCIPAL__ */
+.sec_gen{
+    position: relative;
+    padding: 80px 0px 100px 0px;
+}
+.pleca_divider::before{
+    position: absolute;
+    content: "";
+    top: -60px;
+    width: 100%;
+    left: 0;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: center bottom -4px;
+    background-size: 100%;
+}
+.pleca_white::before{
+    background-image: url('../images/svg/pleca_divider_white.svg');
+}
+.pleca_orange::before{
+    background-image: url('../images/svg/pleca_divider_orange.svg');
+}
+.pleca_blue::before{
+    background-image: url('../images/svg/pleca_divider_blue.svg');
+}
+.slider-item01{
+    background-image: url(../images/Pinturas-ducald-slider-calidad.jpg);
+}
+.owl-carousel.home-slider .slider-item .slider-text h1{
+    font-family: var(--font-open-sans);
+    font-size: 4vw;
+    color: var(--color-azul-ducald);
+    margin-bottom: 20px;
+}
+.cont_descrip_slider{
+    max-width: 480px;
+    margin-left: 40px;
+}
+.txt_slider{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--color-azul-ducald);
+}
+.icon-arrow-back, .icon-arrow-next {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+.owl-carousel.home-slider .owl-nav .owl-prev{
+    background-image: url('../images/svg/icon_arrow_back.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: calc(50% - 100px);
+}
+.owl-carousel.home-slider .owl-nav .owl-next{
+    background-image: url('../images/svg/icon_arrow_next.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: calc(50% - 100px);
+}
+.owl-carousel.home-slider .owl-nav{
+    top: 84%;
+}
+
+    /* FILA 4 PRODUCTOS */
+.cont_productos{
+    margin-top: 80px;
+}
+ .article_product_cover img{
+    width: 80%;
+    margin-bottom: 24px;
+} 
+.cont_tit{
+    padding: 40px 0px;
+}
+
+    /* SECTION BLOG */
+#sec_blog{
+    background-color: var(--color-naranja-ducald);
+}
+#sec_blog .cont_txt{
+    margin-left: 24px;
+}
+#sec_blog img{
+    width: 50%;
+}
+#sec_factura{
+    background-color: var(--color-azul-ducald);
+}
+
+    /* SECTION POR QUE ELEGIR */
+#por_que_elegir{
+    padding: 80px 5% 100px 5%;
+}
+.cont_elegir_gal{
+    margin-top: 24px;
+}
+.cont_socios_comerciales h2.tit_principal{
+    margin: 80px 0px;
+}
+.list_general{
+    padding-left: 20px;
+}
+.list_general .item_general{
+    font-family: var(--font-open-sans);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* __PREGUNTAS FRECUENTES__ */
+.sec_preguntas{
+    padding: 80px 0px 100px 0px;
+}
+.sangria{
+    padding-left: 20px;
+}
+
+/* __PRODUCTOS__ */
+    /* NAV PRODUCTOS */
+.nav_prod{
+    position: sticky;
+    top: 0px;
+    padding: 20px 0px;
+    background-color: var(--color-naranja-ducald);
+    z-index: 2;
+}
+.nav_list{
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    list-style: none;
+    padding-left: 0;
+}
+.nav_prod .item_nav{
+    font-family: var(--font-open-sans);
+    color: var(--color-white);
+    font-size: 1rem;
+}
+#calc_litros{
+    padding: 80px 0px;
+}
+
+    /* CUANTOS LITROS */
+.cont_form_litros{
+    margin-top: 80px;
+}
+.cont_form_calc{
+    background-color: var(--color-naranja-ducald);
+}
+#form_litros{
+    box-sizing: border-box;
+    padding: 24px;
+}
+.group_input{
+    width: 100%;
+}
+.group_input input{
+    padding: 6px 16px;
+    border: none;
+    width: 100%;
+    background-color: var(--color-gris-ducald);
+    font-family: var(--font-open-sans);
+    margin-bottom: 20px;
+}
+#form_litros .group_input input::placeholder{
+    color: var(--color-black-light);
+    font-family: var(--font-open-sans);
+    font-weight: 600;
+}
+#form_litros label{
+    display: block;
+    font-family: var(--font-open-sans);
+    color: var(--color-white);
+    font-size: 1.4rem;
+}
+#form_litros #btn_form{
+    margin-top: 8px;
+    width: 100%;
+    background-color: var(--color-white);
+    font-size: 1.4rem;
+    border: none;
+    padding: 4px 0px;
+}
+#form_litros #btn_form::placeholder{
+    font-family: var(--font-open-sans);
+}
+.cont_return_form{
+    background-color: var(--color-white);
+    border: 4px solid var(--color-naranja-ducald);
+    padding: 40px 0px 60px 0px;
+}
+.tit_return{
+    font-family: var(--font-open-sans);
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    color: var(--color-naranja-ducald);
+}
+.number_retur{
+    font-family: var(--font-open-sans);
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+}
+.subTit_return{
+    font-family: var(--font-open-sans);
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.caption_return{
+    font-family: var(--font-open-sans);
+    font-size: .9rem;
+    font-weight: 600;
+}
+.w-300{
+    width: 800px;
+    margin-left: calc(50% - 400px);
+}
+.cont_img_balse{
+    margin: 60px 0px 0px 0px;
+}
+.cont_img_balse img{
+    max-width: 340px;
+}
+
+    /* BANNER MADERAS */
+#banner_maderas{
+    padding: 120px 0px 120px 0px;
+    background-image: url('../images/Pinturas-ducald-bg-maderas.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    /* ANIMACIONES */
+@keyframes MoveRightInitial {
+	to {
+		transform: translate3d(105%,0,0);
+	}
+}
+@keyframes MoveRightEnd {
+	from {
+		transform: translate3d(-100%,0,0);
+	}
+	to {
+		transform: translate3d(0,0,0);
+	}
+}
