@@ -13,6 +13,7 @@ body{
     padding: 0;
     margin: 0;
     font-size: 16px;
+    overflow-x: hidden;
     font-family: var(--font-open-sans);
 }
 
@@ -51,8 +52,27 @@ body{
     line-height: 2rem;
     font-weight: bold;
 }
+.subtit_principal_bn{
+    font-family: var(--font-open-sans);
+    color: var(--color-white);
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: bold;
+}
 .subtit_secundario{
     font-size: 2rem;
+    color: var(--color-black);
+    font-weight: bold;
+    line-height: 2.4rem;
+}
+.subtit_secundario_bn{
+    font-size: 2rem;
+    color: var(--color-white);
+    font-weight: bold;
+    line-height: 2.4rem;
+}
+.subtit_tercero{
+    font-size: 2.1rem;
     color: var(--color-black);
     font-weight: bold;
     line-height: 2.4rem;
@@ -71,11 +91,13 @@ body{
     font-family: var(--font-open-sans);
     color: var(--color-black);
     font-size: 1.2rem;
+    line-height: 1.5rem;
     font-weight: 600;
 }
 .txt_general_bn{
     font-family: var(--font-open-sans);
     color: var(--color-white);
+    line-height: 1.5rem;
     font-size: 1.3rem;
 }
 .txt_tercero_xb{
@@ -90,6 +112,22 @@ body{
 
 
 /* BOTONES */
+button.btn_gen{
+    font-family: var(--font-open-sans);
+    color: var(--color-azul-ducald);
+    font-weight: 600;
+    font-size: 1.4rem;
+    background-color: #fff;
+    border: none;
+}
+button.btn_gen:hover{
+    font-family: var(--font-open-sans);
+    color: var(--color-azul-ducald);
+    font-weight: 600;
+    font-size: 1.4rem;
+    background-color: #fff;
+    border: none;
+}
 .btn_gen{
     font-family: var(--font-open-sans);
     color: var(--color-naranja-ducald);
@@ -185,7 +223,6 @@ body{
 
 /* NAVEGACIÓN */
 #sec_ducald_01{
-    background-color: red;
     width: 100%;
     height: 90vh!important;
 }
@@ -199,6 +236,79 @@ body{
     width: 120px;
     height: auto;
 }
+.modal-header .navbar-brand {
+    width: 120px;
+    height: auto;
+    margin-left: 10%;
+}
+.modal-header .close {
+    padding: 1rem 1rem;
+    margin: 0;
+    color: var(--color-azul-ducald);
+    opacity: 1;
+    font-size: 2rem;
+    margin-right: 10%;
+}
+.modal-body{
+    padding: 0;
+}
+.modal-fullscreen{
+    max-width: 100%;
+    max-height: 100vh;
+    margin: 0;
+}
+.modal-content{
+    height: 100vh;
+}
+.cont_img_menu{
+    display: block;
+    width: 100%;
+    height: 88.5369vh;
+    background-image: url('../images/img_menu_principal.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.cont_list_navbar{
+    background-color: var(--color-azul-ducald);
+}
+/* MENÚ */
+.list_navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 0;
+    list-style: none;
+    height: 70vh;
+}
+.list_navbar a{
+    color: var(--color-white);
+    font-family: var(--font-open-sans);
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: 1px solid var(--color-white);
+}
+.list_navbar li{
+    padding-bottom: 2.8%;
+    padding-left: 20px;
+}
+/* SOCIAL */
+.list_navbar_social{
+    width: 100%;
+    padding-left: 12px;
+    list-style: none;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+}
+.list_navbar_social a{
+    margin: 0 12px;
+}
+.list_navbar_social img{
+    height: 40px;
+}
+
+
 
     /* SECCIONES */
 .sec_general{
@@ -206,7 +316,7 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    
     width: 100%;
     height: 100vh;
 }
@@ -247,12 +357,12 @@ body{
     position: absolute;
     content: "";
     width: 100%;
-    height: 60px;
+    height: 68px;
     top: -60px;
     background-image: url('../images/svg/pleca_footer_top.svg');
     background-repeat: no-repeat;
     background-position: center bottom;
-    background-size: contain;
+    background-size: 100%;
 }
 .cont_logo_foot{
     margin-bottom: 40px;
@@ -316,6 +426,7 @@ body{
     background-repeat: no-repeat;
     background-position: center bottom -4px;
     background-size: 100%;
+    z-index: 1;
 }
 .pleca_white::before{
     background-image: url('../images/svg/pleca_divider_white.svg');
@@ -349,17 +460,19 @@ body{
     width: 40px;
     height: 40px;
 }
-.owl-carousel.home-slider .owl-nav .owl-prev{
+.owl-carousel.home-slider .owl-nav .owl-prev, .owl-carousel.slide-img .owl-nav .owl-prev{
+    position: relative;
     background-image: url('../images/svg/icon_arrow_back.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    left: calc(50% - 100px);
+    left: calc(49% - 100px);
 }
-.owl-carousel.home-slider .owl-nav .owl-next{
+.owl-carousel.home-slider .owl-nav .owl-next, .owl-carousel.slide-img .owl-nav .owl-next{
+    position: relative;
     background-image: url('../images/svg/icon_arrow_next.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    right: calc(50% - 100px);
+    right: calc(-51% + 100px);
 }
 .owl-carousel.home-slider .owl-nav{
     top: 84%;
@@ -539,12 +652,137 @@ body{
 
     /* SLIDER FOTOS */
 #sec_tecnologia{
-    padding: 20px 0px 80px 0px;
+    padding: 20px 0px 0px 0px;
+    height: auto;
+}
+.slide-img .owl-nav{
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
 }
 #sec_tecno_descrip{
-    padding: 80px 5% 100px 5%;
+    padding: 80px 5% 60px 5%;
 }
 
+    /* FILOSOFÍA */
+#sec_filo{
+    padding: 0px 5% 60px 5%;
+}
+#sec_filo h2{
+    margin-bottom: 80px;
+}
+#sec_filo > div{
+    margin-bottom: 30px;
+}
+
+    /* LISTADO DE UBICACIONES */
+#sec_directorio{
+    padding: 80px 5% 120px 5%;
+    background-color: var(--color-azul-ducald);
+}
+
+/* __BLOG__ */
+#sec_blog_encab{
+    padding: 80px 0px 40px 0px;
+}
+.item_article_blog{
+    padding: 40px 0px 0px 0px;
+}
+/* __CONTACTO__ */
+#sec_ubicacion{
+    padding: 0px 5% 60px 5%;
+}
+.list_atencion{
+    list-style: none;
+    padding-left: 0;
+}
+.list_atencion a{
+    font-family: var(--font-open-sans);
+    color: var(--color-black);
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+    /* FORMULARIO TABULACION */
+#sec_form_navTab{
+    padding: 0px 5% 60px 5%;
+}
+.form_contacto label{
+    font-family: var(--font-open-sans);
+    color: var(--color-azul-ducald);
+    font-size: 1.4rem;
+    line-height: 1.3rem;
+    font-weight: 500;
+}
+.form_contacto .group_input input{
+    margin-bottom: 20px;
+}
+.label_cont{
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+}
+.form_contacto .group_input input[type=radio]{
+    width: 10px;
+}
+.form_contacto h2{
+    font-family: var(--font-open-sans);
+    color: var(--color-azul-ducald);
+    font-size: 1.6rem;
+    line-height: 1.3rem;
+    font-weight: 500;
+}
+.form_contacto .form-check-label{
+    color: var(--color-black);
+}
+.form_contacto textarea{
+    display: block;
+    width: 100%;
+    height: 34px;
+    border: none;
+    background-color: var(--color-gris-ducald);
+}
+.form_contacto .btn_submit{
+    color: var(--color-white);
+    width: 100%;
+    border: none;
+    padding: 4px 0px;
+    background-color: var(--color-naranja-ducald);
+}
+.cont_input_radio{
+    margin-bottom: 20px;
+}
+.nav-tabs .nav-link{
+    padding: 8px 16px;
+    font-size: 1.6rem;
+}
+.nav-tabs .nav-link.active{
+    background-color: var(--color-naranja-ducald);
+    color: var(--color-white);
+}
+#myTab .nav-item{
+    width: 25%;
+}
+#myTab .nav-item .nav-link{
+    width: 100%;
+}
+.tab-pane{
+    box-sizing: border-box;
+    border: 2px solid var(--color-naranja-ducald);
+}
+    /* BTN PREGUNTAS FAQS */
+#sec_faqs{
+    padding: 20px 0% 100px 0%;
+}
+#exampleModal{
+    z-index: 999;
+}
+.modal-backdrop{
+    z-index: 1;
+}
 
 
     /* ANIMACIONES */
@@ -560,4 +798,121 @@ body{
 	to {
 		transform: translate3d(0,0,0);
 	}
+}
+
+    /* __RESPONSIVE__ */
+
+    /* 1200px */
+@media only screen and (max-width:1200px){
+    .tit_link{
+        font-size: 4vw;
+    }
+}
+
+    /* 768px */
+@media only screen and (max-width:768px){
+    .tit_link{
+        font-size: 5vw;
+    }
+}
+
+    /* 560px */
+@media only screen and (max-width:560px){
+    .tit_link{
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+    .cont_img_menu{
+        display: none;
+    }
+    .list_navbar li {
+        padding-bottom: 6%;
+        padding-left: 40px;
+    }
+    .list_navbar_social{
+        padding-left: 40px;
+    }
+    .list_navbar{
+        height: 73.4vh;
+    }
+    .nav_list{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+    .nav_prod .item_nav{
+        margin: 6px 12px;
+    }
+    .w-400, .cont_encabezado{
+        width: 100%;
+        margin: 0;
+    }
+    .tit_principal, .tit_principal_bn{
+        font-size: 8vw;
+        line-height: 1.2;
+    }
+    .article_product_cover{
+        margin-bottom: 40px;
+    }
+    .tit_link_col{
+        font-size: 8vw;
+        line-height: 1.2;
+    }
+    #sec_blog .container{
+        flex-direction: column;
+    }
+    #sec_blog img {
+        width: 100%;
+    }
+    #sec_blog .cont_txt {
+        margin-top: 24px;
+        margin-left: 0;
+    }
+    .pleca_divider::before{
+        background-size: 400%;
+        top: -56px;
+    }
+    .sec_gen{
+        padding: 80px 16px 100px 16px;
+    }
+    .cont_descrip_slider{
+        margin-left: 0px;
+        padding-left: 16px;
+    }
+    #por_que_elegir img{
+        margin-bottom: 20px;
+    }
+    #por_que_elegir {
+        padding: 80px 0% 100px 0%;
+        overflow-x: hidden;
+    }
+    #por_que_elegir > .align-items-center{
+        padding: 0px 16px;
+    }
+    .cont_socios_comerciales .col-12{
+        box-sizing: border-box;
+        padding: 0;
+    }
+    #calc_litros .cont_encabezado{
+        padding: 0px 16px;
+    }
+    .w-300{
+        width: 100%;
+        margin: 0;
+    }
+    .cont_return_form {
+        padding: 40px 0px 40px 0px;
+    }
+    #sec_tecno_descrip img{
+        margin-bottom: 20px;
+    }
+    #arcticle_blog .item_article_blog{
+        padding: 40px 0px 0px 0px;
+    }
+    .item_article_blog h2, .item_article_blog p{
+        padding: 0 16px;
+    }
+    #myTab .nav-item {
+        width: 100%;
+    }
 }

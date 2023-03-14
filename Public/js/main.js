@@ -8,7 +8,9 @@ function sliderIMG(){
             loop:true,
             items:1,
             margin:10,
-            nav:true
+            nav:true,
+            dots: false,
+            navText : ["<span class='icon-arrow-back'></span>","<span class='icon-arrow-next'></span>"]
         });
     });
 }
