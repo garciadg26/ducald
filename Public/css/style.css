@@ -32,7 +32,7 @@ body{
 .cont_encabezado .tit_principal{
     margin-bottom: 48px;
 }
-.tit_principal, .tit_principal_bn{
+.tit_principal, .tit_principal_bn, .tit_principal_bk{
     font-family: var(--font-open-sans);
     color: var(--color-azul-ducald);
     line-height: 3.6rem;
@@ -44,6 +44,9 @@ body{
 }
 .tit_principal_bn{
     color: var(--color-white);
+}
+.tit_principal_bk{
+    color: var(--color-black);
 }
 .subtit_principal{
     font-family: var(--font-open-sans);
@@ -263,7 +266,7 @@ button.btn_gen:hover{
 .cont_img_menu{
     display: block;
     width: 100%;
-    height: 88.5369vh;
+    height: 87vh;
     background-image: url('../images/img_menu_principal.jpg');
     background-repeat: no-repeat;
     background-position: center center;
@@ -783,6 +786,50 @@ button.btn_gen:hover{
 .modal-backdrop{
     z-index: 1;
 }
+    /* PRODUCTOS */
+.sec_pintura_producto{
+    padding: 80px 0px 0px 0px;
+    width: 100%;
+    overflow-x: hidden;
+}
+.sec_distribuidor_producto{
+    padding: 60px 0px 80px 0px;
+}
+.divider_p{
+    width: 100%;
+    height: 50px;
+}
+
+.subMenu_productos a{
+    width: 100%;
+    height: 50px;
+    font-size: 2rem;
+    background-color: green;
+}
+
+.subMenu_productos li:nth-child(2){
+    background-color: red;
+    animation-name: itemMenu01;
+    animation-duration: 1s;
+}
+.subMenu_productos li:nth-child(3){
+    background-color: blue;
+    animation-name: itemMenu01;
+    animation-duration: 4s;
+}
+
+/* ANIMACIONES */
+@keyframes itemMenu01 {
+    from {
+        transform: translate(10px);
+        opacity: 0;
+	}
+    to {
+        transform: translate(100px);
+        opacity: 1;
+    }
+}
+
 
 
     /* ANIMACIONES */
@@ -807,12 +854,20 @@ button.btn_gen:hover{
     .tit_link{
         font-size: 4vw;
     }
+    #sec_for_product .cont_encabezado{
+        max-width: 768px;
+        margin-left: calc(50% - 384px);
+    }
 }
 
     /* 768px */
 @media only screen and (max-width:768px){
     .tit_link{
         font-size: 5vw;
+    }
+    #sec_for_product .cont_encabezado{
+        max-width: 480px;
+        margin-left: calc(50% - 240px);
     }
 }
 
@@ -847,7 +902,7 @@ button.btn_gen:hover{
         width: 100%;
         margin: 0;
     }
-    .tit_principal, .tit_principal_bn{
+    .tit_principal, .tit_principal_bn, .tit_principal_bk{
         font-size: 8vw;
         line-height: 1.2;
     }
@@ -914,5 +969,14 @@ button.btn_gen:hover{
     }
     #myTab .nav-item {
         width: 100%;
+    }
+    #sec_for_product .cont_encabezado{
+        max-width: 320px;
+        margin-left: calc(50% - 160px);
+    }
+    .sec_pintura_producto .subtit_principal{
+        font-size: 1.4rem;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }

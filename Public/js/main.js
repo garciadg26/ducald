@@ -1,5 +1,6 @@
 $(document).ready(function(){
     sliderIMG();
+    animaMenu();
 });
 
 function sliderIMG(){
@@ -12,5 +13,15 @@ function sliderIMG(){
             dots: false,
             navText : ["<span class='icon-arrow-back'></span>","<span class='icon-arrow-next'></span>"]
         });
+    });
+}
+
+function animaMenu(){
+    $('.item_nav').click(function() {
+        $('.hidden-menu').fadeToggle("slow", function(){
+            
+        });
+        // Alternative animation for example
+        // slideToggle("fast");
     });
 }

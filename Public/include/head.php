@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="Public/css/slide.css">
 
     <!-- STYLE -->
-    <link rel="stylesheet" href="Public/css/style.css">
+    <link rel="stylesheet" href="Public/css/style.css?ver=1.1.16">
     <!-- CARROUCEL -->
     <link rel="stylesheet" href="Public/css/owl.carousel.min.css">
     
