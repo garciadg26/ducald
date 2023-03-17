@@ -1,3 +1,4 @@
+    <?php include_once "Public/include/loader.php"; ?>
     <header class="menu_principal">
         <!-- MENÚ DE NAVEGACIÓN -->
         <nav class="navbar navbar-expand-lg">
@@ -14,7 +15,7 @@
         <div class="modal-dialog modal-fullscreen">
           <div class="modal-content">
             <div class="modal-header">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="index.php">
                     <img class="img-fluid" src="Public/images/svg/logotipo_ducald_pinturas.svg" alt="logotipo Punturas Ducald">
                 </a>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -25,7 +26,7 @@
               <!-- CONTENIDO -->
               <div class="row">
                 <div class="col-md-4 p-0">
-                    <idv class="cont_img_menu"></idv>
+                    <div class="cont_img_menu"></div>
                 </div>
                 <div class="col-md-8 cont_list_navbar p-0">
                     <ul class="list_navbar">

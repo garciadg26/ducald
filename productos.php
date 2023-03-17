@@ -1,9 +1,12 @@
-
+    <?php 
+        $title = "Productos | Pinturas DUCALD";
+        $description = "Fabricamos pinturas y productos de calidad a un precio justo, logrando satisfacer las necesidades de todos y cada uno de nuestros clientes.";
+    ?>
     <?php include_once "Public/include/head.php"; ?>
 </head>
 <body>
-    <?php include_once "Public/include/nav.php"; ?>
 
+    <?php include_once "Public/include/nav.php"; ?>
     <?php include_once "Public/include/navProduct.php"; ?>
 
     <!-- HEAD PHOTO -->
@@ -14,15 +17,15 @@
     <!-- CALCULAR LITROS -->
     <section id="calc_litros" class="sec_litros">
         <div class="cont_encabezado text-center">
-            <h2 class="tit_principal">DUCALD es la pintura de inmejorables características.<br>
+            <h2 class="tit_principal home__photo1">DUCALD es la pintura de inmejorables características.<br>
                 Poder cubriente, lavabilidad y resistencia a la intemperie.
             </h2>
-            <h4 class="subtit_principal">DUCALD forma una película plástica con excelente satinado que se aplica a superficies de yeso, cemento, concreto, tablaroca, papel, madera, manpostería, entre muchas otras; brinda acabados de calidad, mientras cuida los materiales de la oxidación.</h4>
+            <h4 class="subtit_principal home__photo2">DUCALD forma una película plástica con excelente satinado que se aplica a superficies de yeso, cemento, concreto, tablaroca, papel, madera, manpostería, entre muchas otras; brinda acabados de calidad, mientras cuida los materiales de la oxidación.</h4>
         </div>
         <div class="container cont_form_litros">
-            <h2 class="tit_principal text-center mb-4">¿Cuántos litros necesito?</h2>
+            <h2 class="tit_principal text-center mb-4 home__photo2">¿Cuántos litros necesito?</h2>
             <div class="cont_form_calc">
-                <form id="form_litros" class="form_general" action="" method="post">
+                <form id="form_litros" class="form_general home__photo1" action="" method="post">
                     <div class="group_input">
                         <label for="nAreaINP">Ingresa el área a cubrir con Pinturas Ducald (metros cuadrados)</label>
                         <input type="number" name="nAreaINP" id="nAreaINP" placeholder="Ejemplo: 55">
@@ -74,7 +77,7 @@
             </div>
             <p class="txt_general text-center mt-3">*El resultado es un dato aproximado. Pregunta por la cantidad de litros recomendada en tu tienda más cercana. Existen distintas variaciones en la cantidad de pintura requerida, como el tipo de muro, la herramienta y la técnica.</p>
             <div class="cont_img_balse text-center">
-                <img class="img-fluid" src="Public/images/logotipo-balse-terminados.jpg" alt="">
+                <img class="img-fluid home__photo1" src="Public/images/logotipo-balse-terminados.jpg" alt="">
             </div>
         </div>
     </section>
@@ -82,21 +85,12 @@
     <!-- BANNER MADERAS -->
     <section id="banner_maderas" class="sec_banner_maderas">
         <div class="container text-center">
-            <h2 class="tit_principal mb-4">LA MEJOR SOLUCIÓN PARA MADERAS</h2>
-            <p class="txt_general">Hemos invertido toda nuestra experiencia desarrollando productos acrílicos y esmaltes, para crear una línea de terminados para madera, BALSE.</p>
+            <h2 class="tit_principal mb-4 home__photo1">LA MEJOR SOLUCIÓN PARA MADERAS</h2>
+            <p class="txt_general home__photo2">Hemos invertido toda nuestra experiencia desarrollando productos acrílicos y esmaltes, para crear una línea de terminados para madera, BALSE.</p>
         </div>
     </section>
     
-    <!-- DISTRIBUIDOR -->
-    <section id="sec_distribuidor" class="sec_gen pleca_divider pleca_white">
-        <div class="container text-center">
-            <h2 class="tit_principal mb-4">¿QUIERES SER DISTRIBUIDOR?</h2>
-            <p class="txt_general">Forma parte de nuestra red de distribución al ofrecer la amplia gama de soluciones con la que cuenta pinturas DUCALD. Contamos con un respaldo de más de 20 años y miles de clientes en varios estados de la República Mexicana.</p>
-            <div class="content_btn">
-                <a class="btn_gen btn_primario" href="destinos.php">Llévame a Contacto</a>
-            </div>
-        </div>
-    </section>
+<?php include_once "Public/include/bannerDistribuidor.php" ?>
 
     <?php include_once "Public/include/footer.php"; ?>
 </body>

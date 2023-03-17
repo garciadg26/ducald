@@ -1,5 +1,10 @@
+    <?php 
+        $title = "Contacto | Pinturas DUCALD";
+        $description = "Fabricamos pinturas y productos de calidad a un precio justo, logrando satisfacer las necesidades de todos y cada uno de nuestros clientes.";
+    ?>
     <?php include_once "Public/include/head.php"; ?>
 <body>
+    <?php include_once "Public/include/loader.php"; ?>
     <?php include_once "Public/include/nav.php" ?>
 
     <!-- HEAD PHOTO -->
@@ -10,8 +15,8 @@
     <!-- TEXTO DESCRIPTIVO -->
     <section id="sec_blog_encab" class="encab_blog">
         <div class="container">
-            <h2 class="tit_principal text-center">EL COLOR QUE NOS UNE</h2>
-            <p class="subtit_principal text-center">Contamos con más de 35 años desarrollando pintura y recubrimientos de calidad.</p>
+            <h2 class="tit_principal text-center home__photo1">EL COLOR QUE NOS UNE</h2>
+            <p class="subtit_principal text-center home__photo2">Contamos con más de 35 años desarrollando pintura y recubrimientos de calidad.</p>
         </div>
     </section>
 
@@ -19,15 +24,15 @@
     <section id="sec_ubicacion" class="ubicacion_contacto">
         <div class="row align-items-center">
             <div class="col-md-4">
-                <p class="txt_general">
+                <p class="txt_general home__photo1">
                     Pinturas Ducald S.A. De C.V. <br>
                     Calle 7 #2 <br>
                     Col. Parque Industrial <br>
                     C.P. 59730 <br>
                     Ecuandureo, Michoacán, México
                 </p>
-                <h4 class="subtit_principal">ATENCIÓN AL CLIENTE</h4>
-                <ul class="list_atencion">
+                <h4 class="subtit_principal home__photo2">ATENCIÓN AL CLIENTE</h4>
+                <ul class="list_atencion home__photo3">
                     <a href="te:3515122297">
                         <li>351 512 22 97
                         </li>
@@ -47,7 +52,7 @@
     </section>
 
     <!-- TABULADOR FORMULARIO -->
-    <section id="sec_form_navTab" class="tab_form">
+    <section id="sec_form_navTab" class="tab_form home__photo1">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
               <button class="nav-link active" id="bolsa-tab" data-toggle="tab" data-target="#bolsa" type="button" role="tab" aria-controls="bolsa" aria-selected="true">Bolsa de trabajo</button>
@@ -64,7 +69,7 @@
           </ul>
           <div class="tab-content" id="myTabContent">
             <!-- BOLSA DE TRABAJO -->
-            <div class="tab-pane fade show active" id="bolsa" role="tabpanel" aria-labelledby="bolsa-tab">
+            <div class="tab-pane fade show active home__photo1" id="bolsa" role="tabpanel" aria-labelledby="bolsa-tab">
                 <div class="row">
                     <div class="col-md-4">
                         <img class="img-fluid" src="Public/images/pinturas_ducald_cover_bolsa_trabajo.jpg" alt="">
@@ -319,7 +324,7 @@
         <div class="container">
             <h2 class="tit_principal">¿Tienes alguna duda?</h2> 
             <p class="txt_general">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, impedit repellat itaque ducimus cumque aspernatur placeat quaerat assumenda soluta ullam quo earum iure, fugit ab distinctio odio nemo voluptatem pariatur.</p>
-            <a class="btn_gen btn_primario" href="faqs.html">Llévame a Preguntas Frecuentes</a>
+            <a class="btn_gen btn_primario" href="faqs.php">Llévame a Preguntas Frecuentes</a>
         </div>
     </section>
 

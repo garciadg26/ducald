@@ -16,18 +16,19 @@
                 <div class="col-md-3">
                     <h2 class="tit_foot_principal">PRODUCTOS</h2>
                     <ul class="list_foot_product">
-                        <a href="#" class="item_list_footer"><li>VINÍLICA</li><a>
-                        <a href="#" class="item_list_footer"><li>ESMALTE</li><a>
-                        <a href="#" class="item_list_footer"><li>EPÓXICO</li><a>
-                        <a href="#" class="item_list_footer"><li>SELLADOR POLIVINÍLICO</li><a>
-                        <a href="#" class="item_list_footer"><li>POLIURETANO</li><a>
-                        <a href="#" class="item_list_footer"><li>IMPERMEABILIZANTE</li><a>
-                        <a href="#" class="item_list_footer"><li>TRÁFICO</li><a>
-                        <a href="#" class="item_list_footer"><li>ALBERCA</li><a>
-                        <a href="#" class="item_list_footer"><li>FONDO INDUSTRIAL</li><a>
-                        <a href="#" class="item_list_footer"><li>BARNIZ</li><a>
-                        <a href="#" class="item_list_footer"><li>PEGAMENTO</li><a>
-                        <a href="#" class="item_list_footer"><li>PASTA ACRÍLICATINTAS</li><a>
+                        <a href="vinilica.php" class="item_list_footer"><li>VINÍLICA</li><a>
+                        <a href="esmalte.php" class="item_list_footer"><li>ESMALTE</li><a>
+                        <a href="epoxico.php" class="item_list_footer"><li>EPÓXICO</li><a>
+                        <a href="sellador-polivinilico.php" class="item_list_footer"><li>SELLADOR POLIVINÍLICO</li><a>
+                        <a href="poliuretano.php" class="item_list_footer"><li>POLIURETANO</li><a>
+                        <a href="impermeabilizante.php" class="item_list_footer"><li>IMPERMEABILIZANTE</li><a>
+                        <a href="trafico.php" class="item_list_footer"><li>TRÁFICO</li><a>
+                        <a href="alberca.php" class="item_list_footer"><li>ALBERCA</li><a>
+                        <a href="fondo-estructural.php" class="item_list_footer"><li>FONDO ESTRUCTURAL</li><a>
+                        <a href="barniz.php" class="item_list_footer"><li>BARNIZ</li><a>
+                        <a href="pegamento.php" class="item_list_footer"><li>PEGAMENTO</li><a>
+                        <a href="pasta-acrilica.php" class="item_list_footer"><li>PASTA ACRÍLICATINTAS</li><a>
+                        <a href="tintas.php" class="item_list_footer"><li>TINTAS</li><a>
                     </ul>
                 </div>
                 <div class="col-md-3">
@@ -81,13 +82,13 @@
                 <a href="" class="item_icon_social">
                     <li><img class="img-fluid" src="Public/images/svg/icon_whatsapp.svg" alt=""></li>
                 </a>
-                <a href="" class="item_icon_social">
+                <a href="facebook.com/PinturasDucaldOficial" class="item_icon_social">
                     <li><img class="img-fluid" src="Public/images/svg/icon_facebook.svg" alt=""></li>
                 </a>
-                <a href="" class="item_icon_social">
+                <a href="instagram.com/pinturasducaldsadecv" class="item_icon_social">
                     <li><img class="img-fluid" src="Public/images/svg/icon_instagram.svg" alt=""></li>
                 </a>
-                <a href="" class="item_icon_social">
+                <a href="https://www.youtube.com/channel/UCy5txkGQYAQkFJZttCul1tA" class="item_icon_social">
                     <li><img class="img-fluid" src="Public/images/svg/icon_youtube.svg" alt=""></li>
                 </a>
             </ul>
@@ -101,10 +102,23 @@
 
     <!-- JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <script type="text/javascript" src="Public/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="Public/js/main.js?ver=1.1.12"></script>
 
     <!-- SCROLL REVEAL -->
     <script type="text/javascript" src="Public/js/scrollReveal.min.js"></script>
     <script type="text/javascript" src="Public/js/scrollAnimation.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.3/lottie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(window).on('load', function () {
+                $('.loader').delay(500).fadeOut('slow');
+            });
+        });
+    </script>
 

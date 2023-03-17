@@ -137,7 +137,7 @@
                     <li class="btn_link activeMenu">
                         <a href="trafico.php">
                             <img src="Public/images/Pinturas-ducald-para-trafico.png" alt="">    
-                            Trafico</a>
+                            Tráfico</a>
                     </li>
                 </ul>
             </div>
@@ -204,7 +204,7 @@
                     </li>
                 </ul>
             </div>
-            <a href="#" class="item_nav">
+            <a href="#" id="tintas" class="item_nav">
                 <li>TINTAS</li>
             </a>
             <div class="hidden-menu tintas">

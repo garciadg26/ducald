@@ -254,6 +254,7 @@ button.btn_gen:hover{
 }
 .modal-body{
     padding: 0;
+    overflow: hidden;
 }
 .modal-fullscreen{
     max-width: 100%;
@@ -271,6 +272,9 @@ button.btn_gen:hover{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    transform: translateY(0px);
+    animation-name: imageMenu1;
+    animation-duration: 0.6s;
 }
 .cont_list_navbar{
     background-color: var(--color-azul-ducald);
@@ -289,7 +293,7 @@ button.btn_gen:hover{
     font-family: var(--font-open-sans);
     font-size: 2rem;
     font-weight: bold;
-    border-bottom: 1px solid var(--color-white);
+    position: relative;
 }
 .list_navbar li{
     padding-bottom: 2.8%;
@@ -464,19 +468,34 @@ button.btn_gen:hover{
     width: 40px;
     height: 40px;
 }
-.owl-carousel.home-slider .owl-nav .owl-prev, .owl-carousel.slide-img .owl-nav .owl-prev{
+.owl-carousel.home-slider .owl-nav .owl-prev{
     position: relative;
     background-image: url('../images/svg/icon_arrow_back.svg');
     background-repeat: no-repeat;
     background-size: cover;
     left: calc(49% - 100px);
 }
-.owl-carousel.home-slider .owl-nav .owl-next, .owl-carousel.slide-img .owl-nav .owl-next{
+.owl-carousel.home-slider .owl-nav .owl-next{
     position: relative;
     background-image: url('../images/svg/icon_arrow_next.svg');
     background-repeat: no-repeat;
     background-size: cover;
     right: calc(-51% + 100px);
+}
+.owl-carousel.slide-img .owl-nav .owl-prev{
+    position: relative;
+    background-image: url('../images/svg/icon_arrow_back.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.owl-carousel.slide-img .owl-nav .owl-next{
+    position: relative;
+    background-image: url('../images/svg/icon_arrow_next.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: transparent!important;
 }
 .owl-carousel.home-slider .owl-nav{
     top: 84%;
@@ -793,7 +812,7 @@ button.btn_gen:hover{
 .sec_pintura_producto{
     padding: 80px 0px 0px 0px;
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .sec_distribuidor_producto{
     padding: 60px 0px 80px 0px;
@@ -880,8 +899,85 @@ button.btn_gen:hover{
 .nav_list_offset .hidden-menu {
     top: 60px;
 }
+/* NAV */
+.list_navbar a:nth-child(1){
+    animation-name: animaItem1;
+    animation-duration: .3s;
+}
+.list_navbar a:nth-child(2){
+    animation-name: animaItem1;
+    animation-duration: .6s;
+}
+.list_navbar a:nth-child(3){
+    animation-name: animaItem1;
+    animation-duration: .9s;
+}
+.list_navbar a:nth-child(4){
+    animation-name: animaItem1;
+    animation-duration: 1.2s;
+}
+.list_navbar a:nth-child(5){
+    animation-name: animaItem1;
+    animation-duration: 1.5s;
+}
+.list_navbar a:nth-child(6){
+    animation-name: animaItem1;
+    animation-duration: 1.8s;
+}
 
-/* ANIMACIONES */
+/* NAV BEFORE */
+.list_navbar a::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    background-color: var(--color-white);
+}
+.list_navbar a:nth-child(1)::before{
+    animation-name: animaLine1;
+    animation-duration: .2s;
+}
+.list_navbar a:nth-child(2)::before{
+    animation-name: animaLine1;
+    animation-duration: .4s;
+}
+.list_navbar a:nth-child(3)::before{
+    animation-name: animaLine1;
+    animation-duration: .6s;
+}
+.list_navbar a:nth-child(4)::before{
+    animation-name: animaLine1;
+    animation-duration: .8s;
+}
+.list_navbar a:nth-child(5)::before{
+    animation-name: animaLine1;
+    animation-duration: 1s;
+}
+.list_navbar a:nth-child(6)::before{
+    animation-name: animaLine1;
+    animation-duration: 1.2s;
+}
+/*NAV SOCIAL*/
+.list_navbar_social a:nth-child(1){
+    animation-name: animaItem1;
+    animation-duration: .3s;
+}
+.list_navbar_social a:nth-child(2){
+    animation-name: animaItem1;
+    animation-duration: .6s;
+}
+.list_navbar_social a:nth-child(3){
+    animation-name: animaItem1;
+    animation-duration: .9s;
+}
+.list_navbar_social a:nth-child(4){
+    animation-name: animaItem1;
+    animation-duration: 1.2s;
+}
+
+
+/* ANIMACIONES SUB-MENU */
 @keyframes itemMenu01 {
     from {
         transform: translate(0px, 0px);
@@ -892,6 +988,43 @@ button.btn_gen:hover{
         opacity: 1;
     }
 }
+
+/* ANIMACIONES MENU */
+@keyframes animaItem1 {
+    from {
+        transform: translateX(20px);
+        opacity: 0;
+	}
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+/* ANIMACIONES LINE */
+@keyframes animaLine1 {
+    from {
+        width: 40%;
+        opacity: 0;
+	}
+    to {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+/* ANIMACIONES LINE */
+@keyframes imageMenu1 {
+    from {
+        transform: translateY(80px);
+        opacity: 0;
+	}
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
 
 
 
@@ -1041,5 +1174,21 @@ button.btn_gen:hover{
         font-size: 1.4rem;
         padding-left: 16px;
         padding-right: 16px;
+    }
+    .subMenu_productos{
+        flex-wrap: wrap;
+    }
+    .subMenu_productos img {
+        width: 60px;
+    }
+    .subMenu_productos li {
+        width: 80px;
+        margin-bottom: 16px;
+    }
+    .hidden-menu {
+        top: 236px;
+    }
+    .nav_list_offset .hidden-menu {
+        top: 128px;
     }
 }
