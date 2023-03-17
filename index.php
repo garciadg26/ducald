@@ -3,11 +3,13 @@
     <?php include_once "Public/include/nav.php"; ?>
     <!-- DUCALT MEJOR OPCIÓN -->
     <section id="sec_ducald_01" class="sec_general">
-        <button onclick="location.href='ducald.php'" class="tit_link link_slide button button--telesto"><span>DUCALD ES TU MEJOR OPCIÓN</span></button>
+        <div class="home__photo1">
+            <button onclick="location.href='ducald.php'" class="tit_link link_slide button button--telesto"><span>DUCALD ES TU MEJOR OPCIÓN</span></button>
+        </div>
     </section>
     <!-- PRODUCTOS -->
     <section id="sec_ducald_02" class="sec_general">
-        <button onclick="location.href='productos.php'" class="tit_link link_slide button button--telesto"><span>PRODUCTOS</span></button>
+        <button onclick="location.href='productos.php'" class="tit_link link_slide button button--telesto home__photo2"><span>PRODUCTOS</span></button>
     </section>
     <!-- NOSOTROS -->
     <section id="sec_ducald_03" class="sec_general">
