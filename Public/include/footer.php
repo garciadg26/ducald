@@ -102,4 +102,9 @@
     <!-- JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="Public/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="Public/js/main.js?ver=1.1.10"></script>
+    <script type="text/javascript" src="Public/js/main.js?ver=1.1.12"></script>
+
+    <!-- SCROLL REVEAL -->
+    <script type="text/javascript" src="Public/js/scrollReveal.min.js"></script>
+    <script type="text/javascript" src="Public/js/scrollAnimation.js"></script>
+

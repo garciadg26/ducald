@@ -17,11 +17,21 @@ function sliderIMG(){
 }
 
 function animaMenu(){
-    $('.item_nav').click(function() {
-        $('.hidden-menu').fadeToggle("slow", function(){
-            
+    $('.nav_list').on('click','a',function() {
+        let capId = $(this).attr('id');
+        $('.'+capId).fadeToggle('slow', function(){
+
         });
-        // Alternative animation for example
-        // slideToggle("fast");
+        console.log($(this).attr('id'));
+
     });
 }
+// function animaMenu(){
+//     $('.item_nav').click(function() {
+//         $('.hidden-menu').fadeToggle("slow", function(){
+            
+//         });
+//         // Alternative animation for example
+//         // slideToggle("fast");
+//     });
+// }

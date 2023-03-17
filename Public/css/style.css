@@ -327,6 +327,7 @@ button.btn_gen:hover{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    background-attachment: fixed;
 }
 #sec_ducald_01{
     background-image: url('../images/Pinturas-ducald-tu-mejor-opcion.jpg');
@@ -544,6 +545,7 @@ button.btn_gen:hover{
     z-index: 2;
 }
 .nav_list{
+    position: relative;
     flex-wrap: nowrap;
     justify-content: space-around;
     list-style: none;
@@ -551,8 +553,9 @@ button.btn_gen:hover{
 }
 .nav_prod .item_nav{
     font-family: var(--font-open-sans);
-    color: var(--color-white);
+    color: var(--color-white)!important;
     font-size: 1rem;
+    cursor: pointer;
 }
 #calc_litros{
     padding: 80px 0px;
@@ -799,33 +802,93 @@ button.btn_gen:hover{
     width: 100%;
     height: 50px;
 }
-
+.hidden-menu{
+    position: absolute;
+    display: none;
+    width: 100%;
+    top: 100px;
+    box-sizing: border-box;
+    padding: 0px 16px 40px 16px;
+    background-color: var(--color-amarillo-ducald);
+    z-index: 1;
+}
+.subMenu_productos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.subMenu_productos img{
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
 .subMenu_productos a{
     width: 100%;
     height: 50px;
-    font-size: 2rem;
-    background-color: green;
+    font-size: .8rem;
+    color: var(--color-black);
+    font-family: var(--font-open-sans);
+    font-weight: 600;
+}
+.subMenu_productos{
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
 }
 
-.subMenu_productos li:nth-child(2){
-    background-color: red;
+.subMenu_productos li{
+    transform: translate(-20px, 20px);
+    text-align: center;
+    width: 120px;
+}
+.subMenu_productos li:nth-child(1){
     animation-name: itemMenu01;
-    animation-duration: 1s;
+    animation-duration: .6s;
+}
+.subMenu_productos li:nth-child(2){
+    animation-name: itemMenu01;
+    animation-duration: .9s;
 }
 .subMenu_productos li:nth-child(3){
-    background-color: blue;
     animation-name: itemMenu01;
-    animation-duration: 4s;
+    animation-duration: 1.2s;
+}
+.subMenu_productos li:nth-child(4){
+    animation-name: itemMenu01;
+    animation-duration: 1.5s;
+}
+.subMenu_productos li:nth-child(5){
+    animation-name: itemMenu01;
+    animation-duration: 1.8s;
+}
+.subMenu_productos li:nth-child(6){
+    animation-name: itemMenu01;
+    animation-duration: 2.1s;
+}
+.subMenu_productos li:nth-child(7){
+    animation-name: itemMenu01;
+    animation-duration: 2.4s;
+}
+.subMenu_productos li:nth-child(8){
+    animation-name: itemMenu01;
+    animation-duration: 2.7s;
+}
+.subMenu_productos li:nth-child(9){
+    animation-name: itemMenu01;
+    animation-duration: 3s;
+}
+.nav_list_offset .hidden-menu {
+    top: 60px;
 }
 
 /* ANIMACIONES */
 @keyframes itemMenu01 {
     from {
-        transform: translate(10px);
+        transform: translate(0px, 0px);
         opacity: 0;
 	}
     to {
-        transform: translate(100px);
+        transform: translate(-20px, 20px);
         opacity: 1;
     }
 }
