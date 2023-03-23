@@ -7,5 +7,5 @@ var container = document.getElementById('build');
  	loop: false,
  	autoplay: true,
  	//animationData: jsonFromAfterEffects,
-     path: 'jso/vidalta.json'
+     path: 'json/ducald.json'
  })

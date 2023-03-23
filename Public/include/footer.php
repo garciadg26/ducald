@@ -104,21 +104,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script type="text/javascript" src="Public/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="Public/js/main.js?ver=1.1.12"></script>
+    <script type="text/javascript" src="Public/js/main.js?ver=1.1.13"></script>
 
     <!-- SCROLL REVEAL -->
     <script type="text/javascript" src="Public/js/scrollReveal.min.js"></script>
     <script type="text/javascript" src="Public/js/scrollAnimation.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.3/lottie.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"></script>
-    
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $(window).on('load', function () {
-                $('.loader').delay(500).fadeOut('slow');
-            });
-        });
-    </script>
 

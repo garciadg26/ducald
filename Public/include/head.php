@@ -34,10 +34,23 @@
     <link rel="stylesheet" href="Public/css/slide.css">
 
     <!-- STYLE -->
-    <link rel="stylesheet" href="Public/css/style.css?ver=1.1.22">
+    <link rel="stylesheet" href="Public/css/style.css?ver=1.1.29">
     <!-- CARROUCEL -->
     <link rel="stylesheet" href="Public/css/owl.carousel.min.css">
     <link rel="stylesheet" href="Public/css/animate.css">
+
+    <script src="Public/js/jquery-1.9.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.3/lottie.min.js"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(window).on('load', function () {
+                $('.loader').delay(1000).fadeOut('slow');
+            });
+        });
+    </script>
+
     <!-- <script src="Public/js/jquery-1.9.1.min.js"></script> -->
 
 

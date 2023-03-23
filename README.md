@@ -1,6 +1,6 @@
 # SITIO WEB PINTURAS DUCALD
 ## Páginas para maquetar
-- [ ]Index
+- Index
 - Ducald
 - Productos
 - Nosotros

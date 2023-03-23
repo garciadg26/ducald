@@ -23,6 +23,7 @@ body{
     position: relative;
     box-shadow: 0px 6px 18px rgb(0 0 0 / 20%);
     z-index: 1;
+    background-color: var(--color-white);
 }
 
 .cont_encabezado{
@@ -325,31 +326,50 @@ button.btn_gen:hover{
     align-items: center;
     
     width: 100%;
-    height: 100vh;
+    height: 80vh;
+}
+.foreground{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 #sec_ducald_01, #sec_ducald_02, #sec_ducald_03, #sec_ducald_04, #sec_ducald_05, #sec_ducald_06{
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
+    position: relative;
 }
-#sec_ducald_01{
-    background-image: url('../images/Pinturas-ducald-tu-mejor-opcion.jpg');
+#sec_ducald_01 > div, #sec_ducald_02 > div, #sec_ducald_03 > div, #sec_ducald_04 > div, #sec_ducald_05 > div, #sec_ducald_06 > div{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    transform: translateZ(0);
+    -moz-transform: translatez(0);
+    -ms-transform: translatez(0);
+    -o-transform: translatez(0);
+    -webkit-transform: translateZ(0);
+    -webkit-font-smoothing: antialiased;
 }
 #sec_ducald_02{
-    background-image: url('../images/Pinturas-ducald-productos.jpg');
+    /* background-image: url('../images/Pinturas-ducald-productos.jpg'); */
 }
 #sec_ducald_03{
-    background-image: url('../images/Pinturas-ducald-nosotros.jpg');
+    /* background-image: url('../images/Pinturas-ducald-nosotros.jpg'); */
 }
 #sec_ducald_04{
-    background-image: url('../images/Pinturas-ducald-blog.jpg');
+    /* background-image: url('../images/Pinturas-ducald-blog.jpg'); */
 }
 #sec_ducald_05{
-    background-image: url('../images/Pinturas-ducald-facturacion.jpg');
+    /* background-image: url('../images/Pinturas-ducald-facturacion.jpg'); */
 }
 #sec_ducald_06{
-    background-image: url('../images/Pinturas-ducald-contacto.jpg');
+    /* background-image: url('../images/Pinturas-ducald-contacto.jpg'); */
 }
 
 
@@ -495,7 +515,7 @@ button.btn_gen:hover{
     background-size: cover;
 }
 .owl-theme .owl-nav [class*=owl-]:hover {
-    background: transparent!important;
+    background-color: transparent!important;
 }
 .owl-carousel.home-slider .owl-nav{
     top: 84%;
@@ -1053,6 +1073,25 @@ button.btn_gen:hover{
     #sec_for_product .cont_encabezado{
         max-width: 768px;
         margin-left: calc(50% - 384px);
+        -moz-transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+}
+
+/* 991px */
+@media only screen and (max-width:991px){
+    #sec_ducald_01, #sec_ducald_02, #sec_ducald_03, #sec_ducald_04, #sec_ducald_05, #sec_ducald_06{
+        background-attachment: unset;
+        background-position: 50% 0;
+        background-size: auto 143%;
+        -moz-transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+    #footer::before{
+        background-size: 400%;
+        top: -56px;
     }
 }
 

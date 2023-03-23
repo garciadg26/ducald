@@ -283,8 +283,9 @@
     
     <script type="text/javascript" src="Public/js/bootstrap.min.js"></script> -->
 
-    <script type="text/javascript" src="Public/js/main.js?ver=1.1.10"></script>
+    <!-- <script type="text/javascript" src="Public/js/main.js?ver=1.1.10"></script> -->
     <!-- SLIDER -->
     <script type="text/javascript" src="Public/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="Public/js/caroucel.js"></script>
 </body>
 </html>
