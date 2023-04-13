@@ -17,12 +17,12 @@
             <h2 class="tit_principal text-center mb-3 home__photo1">NUESTRO COLOR ES LA UNIÓN</h2>
             <div class="row">
                 <div class="col-md-4 home__photo2">
-                    <p class="txt_general">Pinturas Ducald es una empresa familiar, que nace a partir de la visión, sensatez y capacidad de riesgo de Don Antonio Calderón (q.e.p.d). <br><br>
+                    <p class="txt_general mb0-sm">Pinturas Ducald es una empresa familiar, que nace a partir de la visión, sensatez y capacidad de riesgo de Don Antonio Calderón (q.e.p.d). <br><br>
                         Inicia sus actividades en el año de 1984 con el giro de compra-venta de abarrotes, vinos y licores. En 1988, se hace una división en el local para la distribución y venta de pinturas vinílicas, esmaltes y selladores multimarca. Con el tiempo, el espacio que se tenía para la igualación de pinturas fue creciendo de tal manera, que desplaza a los abarrotes. <br><br>
                         Al pasar los años, se logra tener presencia en varios estados de la República Mexicana, como: San Luis</p>
                 </div>
                 <div class="col-md-4 home__photo3">
-                    <p class="txt_general">Potosí, Guerrero, Aguascalientes, Colima, Guanajuato, Jalisco, Nayarit, Querétaro, por mencionar algunos. <br><br>
+                    <p class="txt_general mb0-sm">Potosí, Guerrero, Aguascalientes, Colima, Guanajuato, Jalisco, Nayarit, Querétaro, por mencionar algunos. <br><br>
                         Ducald inicia con la producción de pintura hacia el año de 1999, elaborando únicamente pintura vinílica en color blanco. Dada la aceptación y, gracias a su calidad, se elabora pintura en colores base, para incrementar su gama de productos. <br><br>
                         En un lapso no mayor a un año, se suma la elaboración de pinturas base solvente (esmalte alquidálico). Logro muy importante, ya que no se contemplaba hacer este producto con tan poco tiempo transcurrido; fue gracias a la respuesta que tiene la</p>
                 </div>

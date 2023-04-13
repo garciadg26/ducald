@@ -319,6 +319,12 @@ button.btn_gen:hover{
 
 
     /* SECCIONES */
+.v_desktop{
+    display: block;
+}
+.v_movil{
+    display: none;
+}
 .sec_general{
     display: flex;
     flex-direction: row;
@@ -326,50 +332,31 @@ button.btn_gen:hover{
     align-items: center;
     
     width: 100%;
-    height: 80vh;
-}
-.foreground{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    height: 100vh;
 }
 #sec_ducald_01, #sec_ducald_02, #sec_ducald_03, #sec_ducald_04, #sec_ducald_05, #sec_ducald_06{
-    position: relative;
-}
-#sec_ducald_01 > div, #sec_ducald_02 > div, #sec_ducald_03 > div, #sec_ducald_04 > div, #sec_ducald_05 > div, #sec_ducald_06 > div{
-    position: absolute;
-    top: -100px;
-    left: 0;
-    width: 100%;
-    height: 80vh;
-    background-position: center center;
     background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background-position: center center;
     background-size: cover;
-    transform: translateZ(0);
-    -moz-transform: translatez(0);
-    -ms-transform: translatez(0);
-    -o-transform: translatez(0);
-    -webkit-transform: translateZ(0);
-    -webkit-font-smoothing: antialiased;
+    background-attachment: fixed;
+}
+#sec_ducald_01{
+    background-image: url('../images/Pinturas-ducald-tu-mejor-opcion.jpg');
 }
 #sec_ducald_02{
-    /* background-image: url('../images/Pinturas-ducald-productos.jpg'); */
+    background-image: url('../images/Pinturas-ducald-productos.jpg');
 }
 #sec_ducald_03{
-    /* background-image: url('../images/Pinturas-ducald-nosotros.jpg'); */
+    background-image: url('../images/Pinturas-ducald-nosotros.jpg');
 }
 #sec_ducald_04{
-    /* background-image: url('../images/Pinturas-ducald-blog.jpg'); */
+    background-image: url('../images/Pinturas-ducald-blog.jpg');
 }
 #sec_ducald_05{
-    /* background-image: url('../images/Pinturas-ducald-facturacion.jpg'); */
+    background-image: url('../images/Pinturas-ducald-facturacion.jpg');
 }
 #sec_ducald_06{
-    /* background-image: url('../images/Pinturas-ducald-contacto.jpg'); */
+    background-image: url('../images/Pinturas-ducald-contacto.jpg');
 }
 
 
@@ -585,16 +572,18 @@ button.btn_gen:hover{
 }
 .nav_list{
     position: relative;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
     list-style: none;
     padding-left: 0;
+    margin-bottom: 0;
 }
 .nav_prod .item_nav{
     font-family: var(--font-open-sans);
     color: var(--color-white)!important;
     font-size: 1rem;
     cursor: pointer;
+    margin: 0 50px 16px 50px;
 }
 #calc_litros{
     padding: 80px 0px;
@@ -851,6 +840,9 @@ button.btn_gen:hover{
     background-color: var(--color-amarillo-ducald);
     z-index: 1;
 }
+.nav_list div.d-none{
+    display: none!important;
+}
 .subMenu_productos{
     display: flex;
     flex-direction: row;
@@ -1081,17 +1073,75 @@ button.btn_gen:hover{
 
 /* 991px */
 @media only screen and (max-width:991px){
+    .v_desktop{
+        display: none;
+    }
+    .sec_general{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+        width: 100%;
+        height: 80vh;
+    }
+    .foreground{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
     #sec_ducald_01, #sec_ducald_02, #sec_ducald_03, #sec_ducald_04, #sec_ducald_05, #sec_ducald_06{
-        background-attachment: unset;
-        background-position: 50% 0;
-        background-size: auto 143%;
-        -moz-transform: translate3d(0,0,0);
-        -webkit-transform: translate3d(0,0,0);
-        transform: translate3d(0,0,0);
+        position: relative;
+    }
+    #sec_ducald_01 > div, #sec_ducald_02 > div, #sec_ducald_03 > div, #sec_ducald_04 > div, #sec_ducald_05 > div, #sec_ducald_06 > div{
+        position: absolute;
+        top: -40px;
+        left: 0;
+        width: 100%;
+        height: 80vh;
+        background-position: center center;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        transform: translateZ(0);
+        -moz-transform: translatez(0);
+        -ms-transform: translatez(0);
+        -o-transform: translatez(0);
+        -webkit-transform: translateZ(0);
+        -webkit-font-smoothing: antialiased;
+    }
+    #sec_ducald_02{
+        background-image: none;
+        /* background-image: url('../images/Pinturas-ducald-productos.jpg'); */
+    }
+    #sec_ducald_03{
+        background-image: none;
+        /* background-image: url('../images/Pinturas-ducald-nosotros.jpg'); */
+    }
+    #sec_ducald_04{
+        background-image: none;
+        /* background-image: url('../images/Pinturas-ducald-blog.jpg'); */
+    }
+    #sec_ducald_05{
+        background-image: none;
+        /* background-image: url('../images/Pinturas-ducald-facturacion.jpg'); */
+    }
+    #sec_ducald_06{
+        background-image: none;
+        /* background-image: url('../images/Pinturas-ducald-contacto.jpg'); */
+    }
+    #sec_ducald_06 > div{
+        background-position: center right;
     }
     #footer::before{
         background-size: 400%;
         top: -56px;
+    }
+    .v_movil{
+        display: block;
     }
 }
 
@@ -1103,6 +1153,12 @@ button.btn_gen:hover{
     #sec_for_product .cont_encabezado{
         max-width: 480px;
         margin-left: calc(50% - 240px);
+    }
+    .owl-carousel.home-slider .slider-item .slider-text h1{
+        font-size: 9vw;
+    }
+    #footer > .container > .row > .col-md-3:nth-child(1){
+        margin-bottom: 1rem;
     }
 }
 
@@ -1136,6 +1192,7 @@ button.btn_gen:hover{
     .w-400, .cont_encabezado{
         width: 100%;
         margin: 0;
+        padding: 0 16px;
     }
     .tit_principal, .tit_principal_bn, .tit_principal_bk{
         font-size: 8vw;
@@ -1225,9 +1282,27 @@ button.btn_gen:hover{
         margin-bottom: 16px;
     }
     .hidden-menu {
-        top: 236px;
+        top: 200px;
     }
     .nav_list_offset .hidden-menu {
         top: 128px;
+    }
+    #footer .container .row{
+        text-align: center;
+    }
+    #por_que_elegir .cont_elegir_txt .list_general{
+        margin-bottom: 0;
+    }
+    .mb0-sm{
+        margin-bottom: 0;
+    }
+    #footer > .container > .row > .col-md-3:nth-child(1){
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .hidden-menu {
+        top: 236px;
     }
 }

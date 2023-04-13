@@ -1,7 +1,7 @@
     <footer id="footer">
         <div class="container">
             <div class="cont_logo_foot text-center">
-                <a href="index.html" class="cont_logo_foot">
+                <a href="index.php" class="cont_logo_foot">
                     <img class="img-fluid" src="Public/images/svg/logotipo_ducald_pinturas.svg" alt="">
                 </a>
             </div>
@@ -14,8 +14,8 @@
                         Ecuandureo, Michoacán, México</h6>
                 </div>
                 <div class="col-md-3">
-                    <h2 class="tit_foot_principal">PRODUCTOS</h2>
                     <ul class="list_foot_product">
+                        <a href="vinilica.php" class="item_list_footer"><li><b>PRODUCTOS</b></li><a>
                         <a href="vinilica.php" class="item_list_footer"><li>VINÍLICA</li><a>
                         <a href="esmalte.php" class="item_list_footer"><li>ESMALTE</li><a>
                         <a href="epoxico.php" class="item_list_footer"><li>EPÓXICO</li><a>
@@ -34,7 +34,7 @@
                 <div class="col-md-3">
                     <ul class="list_foot_product">
                         <a href="nosotros.php" class="item_list_footer">
-                            <li>NOSOTROS</li>
+                            <li><b>NOSOTROS</b></li>
                         </a>
                         <a href="ducald.php" class="item_list_footer">
                             <li>QUIENES SOMOS</li>
@@ -43,8 +43,10 @@
                             <li>TRABAJA EN DUCALD</li>
                         </a>
                     </ul>
-                    <h2 class="tit_foot_principal">BLOG</h2>
                     <ul class="list_foot_product">
+                        <a href="blog.php" class="item_list_footer">
+                            <li><b>BLOG</b></li>
+                        </a>
                         <a href="#" class="item_list_footer">
                             <li>FACTURACIÓN</li>
                         </a>
@@ -104,7 +106,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script type="text/javascript" src="Public/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="Public/js/main.js?ver=1.1.13"></script>
+    <script type="text/javascript" src="Public/js/main.js?ver=1.1.22"></script>
 
     <!-- SCROLL REVEAL -->
     <script type="text/javascript" src="Public/js/scrollReveal.min.js"></script>

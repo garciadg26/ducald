@@ -1,6 +1,7 @@
 $(document).ready(function(){
     // sliderIMG();
     animaMenu();
+    animaMenuSm();
 });
 
 // function sliderIMG(){
@@ -16,8 +17,9 @@ $(document).ready(function(){
 //     });
 // }
 
-function animaMenu(){
-    $('.nav_list').on('click','a',function() {
+
+function animaMenuSm(){
+    $('.nav_list_two a').hover(function() {
         let capId = $(this).attr('id');
         $('.'+capId).fadeToggle('slow', function(){
 
@@ -26,6 +28,23 @@ function animaMenu(){
 
     });
 }
+
+
+function animaMenu(){
+    $('.nav_list_one').on('click','a',function() {
+        let capId = $(this).attr('id');
+        $('.'+capId).siblings(".hidden-menu").addClass('d-none');
+        $('.'+capId).removeClass('d-none');
+        $('.'+capId).fadeToggle('slow', function(){
+        });
+        
+        console.log($(this).attr('id'));
+    });
+}
+
+
+
+
 // function animaMenu(){
 //     $('.item_nav').click(function() {
 //         $('.hidden-menu').fadeToggle("slow", function(){

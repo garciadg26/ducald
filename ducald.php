@@ -164,7 +164,7 @@
                             <li class="item_general">El embellecimiento (madera).
                                 Dirigiéndonos a particulares, arquitectos, profesionales del sector, empresas e industria.</li>
                         </ul>
-                        <p class="txt_general">Contamos con un equipo de profesionales que respaldan a nuestros clientes, que además de brindar asesoría, garantizan los </p>
+                        <p class="txt_general mb0-sm">Contamos con un equipo de profesionales que respaldan a nuestros clientes, que además de brindar asesoría, garantizan los </p>
                     </div>
                     <div class="col-md-4 home__photo4">
                         <p class="txt_general">resultados y el mejor servicio. <br><br>
