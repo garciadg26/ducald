@@ -1057,8 +1057,31 @@ button.btn_gen:hover{
 
     /* __RESPONSIVE__ */
 
+    
+    /* 1415px */
+@media only screen and (max-width:1415px){
+    .hidden-menu{
+        top: 115%;
+    }
+}
+@media only screen and (max-width:1023px){
+    #sec_ducald_01, #sec_ducald_02, #sec_ducald_03, #sec_ducald_04, #sec_ducald_05, #sec_ducald_06{
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-attachment: initial;
+    }
+}
+@media only screen and (max-width:1190px){
+    .hidden-menu{
+        top: 115%;
+    }
+}
     /* 1200px */
 @media only screen and (max-width:1200px){
+    .hidden-menu{
+        top: 115%;
+    }
     .tit_link{
         font-size: 4vw;
     }
@@ -1143,6 +1166,15 @@ button.btn_gen:hover{
     .v_movil{
         display: block;
     }
+    .hidden-menu{
+        top: 112%;
+    }
+    .subMenu_productos li{
+        margin-bottom: 16px;
+    }
+    .subMenu_productos{
+        flex-wrap: wrap;
+    }
 }
 
     /* 768px */
@@ -1159,6 +1191,27 @@ button.btn_gen:hover{
     }
     #footer > .container > .row > .col-md-3:nth-child(1){
         margin-bottom: 1rem;
+    }
+}
+
+    /* 764px */
+@media only screen and (max-width:764px){
+    .hidden-menu{
+        top: 110%;
+    }
+}
+
+    /* 620px */
+@media only screen and (max-width:620px){
+    .hidden-menu{
+        top: 108%;
+    }
+}
+
+    /* 568px */
+@media only screen and (max-width:568px){
+    .hidden-menu{
+        top: 107%;
     }
 }
 
@@ -1282,7 +1335,7 @@ button.btn_gen:hover{
         margin-bottom: 16px;
     }
     .hidden-menu {
-        top: 200px;
+        top: 164px;
     }
     .nav_list_offset .hidden-menu {
         top: 128px;
@@ -1301,7 +1354,29 @@ button.btn_gen:hover{
     }
 }
 
+    /* 414 */
+@media only screen and (max-width:414px){
+    .hidden-menu {
+        top: 200px;
+    }
+}
+
+    /* 400 */
 @media only screen and (max-width:400px){
+    .hidden-menu {
+        top: 236px;
+    }
+}
+
+    /* 393 */
+@media only screen and (max-width:393px){
+    .hidden-menu {
+        top: 200px;
+    }
+}
+
+    /* 375 */
+@media only screen and (max-width:375px){
     .hidden-menu {
         top: 236px;
     }

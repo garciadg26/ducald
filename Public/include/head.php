@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="Public/css/slide.css">
 
     <!-- STYLE -->
-    <link rel="stylesheet" href="Public/css/style.css?ver=1.1.34">
+    <link rel="stylesheet" href="Public/css/style.css?ver=1.1.39">
     <!-- CARROUCEL -->
     <link rel="stylesheet" href="Public/css/owl.carousel.min.css">
     <link rel="stylesheet" href="Public/css/animate.css">

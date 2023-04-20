@@ -114,9 +114,13 @@
     <!-- POR QUE ELEGIR -->
     <section id="por_que_elegir" class="sec_gen pleca_divider pleca_white">
         <!-- ENCABEZADO -->
-        <div class="cont_encabezado text-center">
-            <h2 class="tit_principal home__photo1">¿POR QUÉ ELEGIR PINTURAS DUCALD?</h2>
-            <p class="txt_tercero_xb home__photo2">Nuestros productos son elaborados con materias primas de alta calidad, que pasan por estrictos controles para obtener un producto final de cualidades óptimas.</p>
+        <div class="cont_encabezado-- text-center">
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <h2 class="tit_principal home__photo1">¿POR QUÉ ELEGIR PINTURAS DUCALD?</h2>
+                    <p class="txt_tercero_xb home__photo2">Nuestros productos son elaborados con materias primas de alta calidad, que pasan por estrictos controles para obtener un producto final de cualidades óptimas.</p>
+                </div>
+            </div>
         </div>
 
         <!-- BLOQUE 1 -->

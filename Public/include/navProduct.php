@@ -1,6 +1,5 @@
     <!-- NAVEGACIÓN PRODUCTOS -->
     <nav class="nav_prod">
-
     <div class="v_desktop">
         <!-- FILA 01 -->
         <ul class="nav_list nav_list_one d-flex">
